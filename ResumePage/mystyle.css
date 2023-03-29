@@ -1,0 +1,289 @@
+@Import 'Utilities.Css';
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300&display=swap');
+
+:root {
+    --Primary: Rgb(29, 221, 189);
+    --BgDark: Rgb(12, 12, 12);
+    --White: Rgb(250, 250, 250);
+    --Secondary: Rgb(0, 59, 50);
+    --BgLight: Rgb(190, 181, 181);
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: var(--BgDark);
+}
+
+header nav a {
+    color: var(--White);
+    text-decoration: none;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+header nav a:hover {
+    color: var(--Primary);
+    transition: all 0.5s ease;
+}
+
+header nav {
+    padding: 2rem 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 200px;
+}
+
+
+.contact>a>button {
+    background-color: var(--BgDark);
+    color: var(--Primary);
+    height: 50px;
+    width: 150px;
+    border: 2px solid var(--Primary);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+.contact>a>button:hover {
+    color: var(--BgDark);
+    background-color: var(--Primary);
+    cursor: pointer;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    transition: all 0.5s ease;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-head {
+    display: flex;
+    padding: 50px;
+    gap: 150px;
+    background-color: var(--BgDark);
+}
+
+.container-head>.about {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container-head>.about>p {
+    line-height: 55px;
+    font-size: 30px;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container-head>.about>h3 {
+    margin-bottom: 20px;
+    font-size: 40px;
+    font-weight: 100;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    color: var(--Primary);
+
+}
+
+.container-head>.about>h1>div {
+    margin: 20px 0 40px 0;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    color: var(--Primary);
+}
+
+.container-head>.about>h1 {
+    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    color: var(--White);
+    font-weight: 100;
+    font-size: 60px;
+}
+
+.container-head>.image>.photo {
+    height: 300;
+    width: 400px;
+}
+
+.container-head>.about>div>a>.download {
+    background-color: var(--BgDark);
+    color: var(--Primary);
+    border: 2px solid var(--Primary);
+    height: 50px;
+    width: 150px;
+    margin: 20px 0 40px 0;
+}
+
+.container-head>.about>div>a>.download:hover {
+    background-color: var(--Primary);
+    color: var(--BgDark);
+    border: 2px solid var(--BgDark);
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.white-space {
+    background-color: white;
+}
+
+.white-space>.container:not(:last-child) {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+    padding: 0 0 50px 0;
+}
+
+.white-space>.container {
+    box-sizing: border-box;
+    display: flex;
+    width: min(1000px, 90%);
+    margin: auto;
+    margin-top: 100px;
+    justify-content: space-between;
+}
+
+.title>h3 {
+    font-size: 1.5rem;
+    width: fit-content;
+    position: relative;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.title>h3:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 4px;
+    inset: 30px 0 0 0;
+    background-color: aqua;
+}
+
+.title {
+    flex-basis: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+
+.info {
+    flex-basis: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.info>.section {
+    line-height: 2rem;
+}
+
+.info>.section>h2 {
+    @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    font-family: 'Roboto', sans-serif;
+}
+
+.info>.section>p {
+    opacity: 0.8;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+
+.info>.section>.data {
+    display: flex;
+    gap: 40px;
+    opacity: 0.6;
+}
+
+
+progress {
+    appearance: none;
+    width: 90%;
+    height: 40px;
+}
+
+progress::-webkit-progress-bar {
+    background-color: lightgray;
+    border-radius: 5px;
+}
+
+progress::-webkit-progress-value {
+    background-color: rgba(0, 0, 0, .6);
+    border-radius: 5px;
+}
+
+.skill {
+    text-transform: uppercase;
+    color: black;
+    opacity: 1 !important;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+footer {
+    text-align: center;
+    padding: 17px;
+    background-color: var(--BgDark);
+    color: white;
+    height: 250px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.foot {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 680px;
+}
+
+footer>.foot>a>#f {
+    color: white;
+    font-size: 30px;
+
+}
+
+.foot>a>#f:hover {
+    color: var(--Primary);
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+footer>a>#arrow {
+    font-size: 56px;
+    color: white;
+}
+
+footer>a>#arrow:hover {
+    color: rgb(125, 123, 123);
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+footer>p {
+    padding: 10px;
+}
