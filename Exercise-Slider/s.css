@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+
+.container {
+  margin: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.wrapper {
+  display: flex;
+  overflow: hidden;
+  width: 50%;
+}
+
+#w2 {
+  width: 60%;
+}
+
+.wrapper img {
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  margin-right: 2px;
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+#prevButton {
+  margin-top: 10px;
+  position: absolute;
+  right: 620px;
+  top: 220px;
+  width: 50px;
+  height: 50px;
+
+}
+
+#prevButton:hover img {
+  content: url(m/arrow-gray-right.png);
+  cursor: pointer;
+}
+
+
+#nextButton {
+  position: absolute;
+  right: 620px;
+  top: 300px;
+  width: 50px;
+  height: 50px;
+}
+
+#nextButton:hover img {
+  content: url(m/arrow-gray-left.png);
+  cursor: pointer;
+}
+
+
+
+.text {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  right: 270px;
+  top: 160px;
+  font-size: 35px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: rgb(0, 54, 190);
+}
+
+.long-text {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  right: 300px;
+  top: 350px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+
+}
+
+.head {
+  width: 80%;
+  height: 100px;
+  background-color: lightgray;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 5px;
+}
+
+.foot {
+  width: 80%;
+  height: 100px;
+  background-color: lightgray;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-radius: 5px;
+}
